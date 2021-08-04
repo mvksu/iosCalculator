@@ -1,0 +1,99 @@
+.calculatorBox {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 7px 7px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+}
+.double {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    transition: background-color 0.6s;
+}
+.double:active {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgb(167, 164, 164);
+    color: white;
+}
+
+.buttonDark {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    border: none;
+    transition: background-color 0.6s;
+}
+.buttonDark:active {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(167, 164, 164);
+    border: none;
+}
+.buttonOrange {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    background-color: orange;
+    border: none;
+    transition: color 0.5s;
+}
+.buttonOrange:active {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(236, 185, 91);
+    border: none;
+}
+.buttonOrangeActive {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: orange;
+    background-color: white;
+    border: none;
+    transition: background-color 0.7s;
+}
+.buttonGrey {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: black;
+    background-color: rgb(133, 133, 133);
+    border: none;
+    transition: color 0.6s;
+}
+.buttonGrey:active {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: black;
+    background-color: rgb(167, 164, 164);
+    border: none;
+}
+.textRight {
+    text-align: right;
+    color: darkgrey;
+    font-size: 0.5em;
+}
+.textRightWhite {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
